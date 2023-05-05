@@ -21,4 +21,6 @@ const app = initializeApp(firebaseConfig);
 // index.js에서 import {firebase} from './firebase' 하고 싶으면
 // export const firebase = initializeApp(firebaseConfig); 라고 하면 된다.
 
+export const firebaseInstance = app;
+
 export const authService = getAuth(app);
